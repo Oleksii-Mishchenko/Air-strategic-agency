@@ -18,11 +18,10 @@ This project is a landing page for the fictional agency "Air." It was developed 
 2. Theme switching is also considered on page load.
 3. Smooth scrolling implemented for the entire page.
 4. Consistent animation speed throughout the page.
-5. Neat appearance on various devices without horizontal scrolling.
-6. The form is cleared and the page scrolls to the top after submission.
-7. The form does not submit with empty fields.
-8. After clicking menu buttons, the landing page scrolls precisely to the beginning of the desired block.
-9. Slider implemented with the ability to navigate between images.
+5. Fully responsive layout.
+6. Basic form validation is added.
+7. Page navigation between sections is implemented.
+8. Slider implemented with the ability to navigate between images.
 
 ## Learning Experience
 

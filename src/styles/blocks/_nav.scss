@@ -25,6 +25,36 @@
     }
   }
 
+  &__menu-closer {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 26px;
+    height: 26px;
+    border: 1px solid $color-white;
+    border-radius: 50px;
+    background-color: transparent;
+    background-image: url(../images/buttons/cross.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    cursor: pointer;
+
+    @include transition(transform);
+
+    @include on-desktop {
+      display: none;
+    }
+
+    &:hover {
+      transform: scale(1.15);
+    }
+
+    &:active {
+      transform: scale(1);
+    }
+  }
+
   &__list {
     display: flex;
 

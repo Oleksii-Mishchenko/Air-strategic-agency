@@ -34,17 +34,25 @@ if (isLightThemeActive) {
   changeTheme();
 }
 
+const pageBody = document.querySelector('.page__body');
 const menuButton = document.querySelector('.header__menu-button');
 const menu = document.querySelector('.header__nav');
 
-const closeMenu = () => {
-  menu.classList.remove('header__nav--mobile-visible');
+const closeMenu = (event) => {
+  if (
+    event.target.className === 'nav__link'
+    || event.target.className === 'nav__menu-closer'
+  ) {
+    menu.classList.remove('header__nav--mobile-visible');
+    pageBody.classList.remove('page__body--no-scroll');
 
-  menu.removeEventListener('click', closeMenu);
+    menu.removeEventListener('click', closeMenu);
+  }
 };
 
 const openMenu = () => {
   menu.classList.add('header__nav--mobile-visible');
+  pageBody.classList.add('page__body--no-scroll');
 
   menu.addEventListener('click', closeMenu);
 };

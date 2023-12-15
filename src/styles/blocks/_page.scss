@@ -5,6 +5,10 @@
   &__body {
     margin: 0;
     background-color: $color-background;
+
+    &--no-scroll {
+      overflow: hidden;
+    }
   }
 
   &__header {
